@@ -1,0 +1,83 @@
+{
+  "toko": {
+    "nama": "Baso Parapatan",
+    "deskripsi": "Baso Parapatan, hangat, siap antar",
+    "alamat": "Jl. Raya Majalengka No.88",
+    "telepon": "+62 857-19607325",
+    "whatsapp": "6285719607325",
+    "email": "info@basoparapatan.my.id",
+    "jam_operasional": {
+      "hari": "Senin - Minggu",
+      "buka": "10:00",
+      "tutup": "21:00"
+    }
+  },
+  "menu": [
+    {
+      "id": 1,
+      "nama": "Baso Cincang",
+      "deskripsi": "Daging sapi pilihan, lembut dan empuk",
+      "harga": 10000,
+      "gambar": "https://images.unsplash.com/photo-1584635379229-f0ae6bc2ae7d?auto=format&fit=crop&w=200&h=200&q=80",
+      "rating": 4.9,
+      "rating_count": 245,
+      "kategori": "reguler"
+    },
+    {
+      "id": 2,
+      "nama": "Baso Ndog",
+      "deskripsi": "Baso dengan telur ayam kampung segar",
+      "harga": 15000,
+      "gambar": "https://images.unsplash.com/photo-1565557623262-b5c3c3a7b4b6?auto=format&fit=crop&w=200&h=200&q=80",
+      "rating": 4.95,
+      "rating_count": 312,
+      "kategori": "premium"
+    },
+    {
+      "id": 3,
+      "nama": "Baso Iga",
+      "deskripsi": "Iga sapi gurih dengan kuah kaldu premium",
+      "harga": 15000,
+      "gambar": "https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?auto=format&fit=crop&w=200&h=200&q=80",
+      "rating": 4.8,
+      "rating_count": 289,
+      "kategori": "premium"
+    },
+    {
+      "id": 4,
+      "nama": "Baso Mercon",
+      "deskripsi": "Pedas nendang untuk pecinta level tinggi",
+      "harga": 15000,
+      "gambar": "https://images.unsplash.com/photo-1584635379229-f0ae6bc2ae7d?auto=format&fit=crop&w=200&h=200&q=80",
+      "rating": 4.85,
+      "rating_count": 198,
+      "kategori": "pedas"
+    }
+  ],
+  "pengiriman": {
+    "area": "Kabupaten Majalengka",
+    "ongkir_flat": 5000,
+    "kecamatan_layanan": [
+      "Majalengka",
+      "Cikijing",
+      "Kadipaten",
+      "Argapura",
+      "Jatiwangi",
+      "Talun",
+      "Leuwimunding",
+      "Sindangwangi"
+    ]
+  },
+  "pembayaran": {
+    "qris_link": "https://files.catbox.moe/2d33ob.jpeg",
+    "metode": [
+      "QRIS",
+      "WhatsApp"
+    ]
+  },
+  "media_sosial": {
+    "instagram": "https://instagram.com/basokita",
+    "facebook": "https://facebook.com/basokita",
+    "youtube": "https://youtube.com/basokita"
+  }
+}
