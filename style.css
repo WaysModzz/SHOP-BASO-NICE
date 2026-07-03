@@ -1,0 +1,553 @@
+/* ===================================
+   BASO KITA - STYLESHEET
+   Modern, Clean & Premium Design
+   =================================== */
+
+/* RESET & GLOBAL */
+* {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* ===================================
+   CUSTOM COLORS
+   =================================== */
+
+.bg-merah {
+  background-color: #B22222;
+}
+
+.bg-coklat {
+  background-color: #6F4E37;
+}
+
+.text-coklat {
+  color: #6F4E37;
+}
+
+.border-coklat {
+  border-color: #6F4E37;
+}
+
+.hover-bg-coklat:hover {
+  background-color: #5a3d2b;
+}
+
+/* ===================================
+   BUTTONS & CTA
+   =================================== */
+
+.btn-cta {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 4px 14px rgba(178, 34, 34, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-cta::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-cta:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(178, 34, 34, 0.45);
+}
+
+.btn-cta:active {
+  transform: scale(0.95);
+}
+
+/* ===================================
+   CARDS
+   =================================== */
+
+.card-menu {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 20px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.card-menu:hover::before {
+  left: 100%;
+}
+
+.card-menu:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 25px 50px -12px rgba(178, 34, 34, 0.25);
+}
+
+.card-menu img {
+  transition: transform 0.4s ease;
+}
+
+.card-menu:hover img {
+  transform: scale(1.08);
+}
+
+/* ===================================
+   NAVBAR
+   =================================== */
+
+.sticky-nav {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.nav-link {
+  position: relative;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #B22222, #C44444);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #B22222;
+}
+
+/* ===================================
+   HERO SECTION
+   =================================== */
+
+.hero-shadow {
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ===================================
+   LOADER
+   =================================== */
+
+#loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f4f1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  transition: opacity 0.6s ease;
+}
+
+.loader-spinner {
+  width: 56px;
+  height: 56px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #B22222;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  box-shadow: 0 0 20px rgba(178, 34, 34, 0.3);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===================================
+   FLOATING BUTTONS
+   =================================== */
+
+.floating-wa {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.floating-wa:hover {
+  animation: none;
+  transform: scale(1.15);
+}
+
+.floating-top {
+  position: fixed;
+  bottom: 100px;
+  right: 28px;
+  z-index: 999;
+}
+
+/* ===================================
+   FORM INPUTS
+   =================================== */
+
+input,
+textarea,
+select {
+  transition: all 0.3s ease;
+  border: 2px solid #e5e7eb !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #B22222 !important;
+  background: rgba(178, 34, 34, 0.02);
+  box-shadow: 0 0 0 3px rgba(178, 34, 34, 0.1);
+}
+
+/* ===================================
+   NOTIFICATIONS / TOAST
+   =================================== */
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  animation: slideIn 0.4s ease;
+  border-left: 4px solid #10b981;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  to {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+}
+
+.toast.error {
+  border-left-color: #ef4444;
+}
+
+.toast.success {
+  border-left-color: #10b981;
+}
+
+.toast.info {
+  border-left-color: #3b82f6;
+}
+
+/* ===================================
+   SECTION ANIMATIONS
+   =================================== */
+
+section {
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ===================================
+   UTILITY CLASSES
+   =================================== */
+
+.disabled-btn {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #B22222 0%, #d63031 100%);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.shake {
+  animation: shake 0.3s ease !important;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+/* ===================================
+   FOOTER LINKS
+   =================================== */
+
+.footer-link {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffb347;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+/* ===================================
+   QUANTITY BUTTONS
+   =================================== */
+
+.qty-btn {
+  transition: all 0.2s ease;
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+.qty-minus {
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+.qty-minus:hover {
+  background: rgba(220, 38, 38, 0.2);
+  transform: scale(1.1);
+}
+
+.qty-plus {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.qty-plus:hover {
+  background: rgba(16, 185, 129, 0.2);
+  transform: scale(1.1);
+}
+
+/* ===================================
+   SCROLLBAR CUSTOM
+   =================================== */
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #B22222;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #8b1a1a;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+@media (max-width: 768px) {
+  .sticky-nav {
+    padding: 0.5rem 1rem;
+  }
+
+  .card-menu {
+    border-radius: 16px;
+  }
+
+  .floating-wa {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .floating-top {
+    bottom: 80px;
+    right: 20px;
+  }
+
+  .hero-shadow {
+    font-size: 2.25rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .badge {
+    font-size: 9px;
+    padding: 3px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .badge {
+    min-width: auto;
+  }
+
+  .floating-wa,
+  .floating-top {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .floating-top {
+    bottom: 80px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+    /* Prevent zoom on iOS */
+  }
+}
+
+/* ===================================
+   PRINT STYLES
+   =================================== */
+
+@media print {
+  .floating-wa,
+  .floating-top,
+  .sticky-nav {
+    display: none;
+  }
+}
