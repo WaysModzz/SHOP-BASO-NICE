@@ -44,7 +44,7 @@ const menuData = [
     nama: 'Baso Cincang',
     deskripsi: 'Daging sapi pilihan, lembut dan empuk.',
     harga: 10000,
-    gambar: 'https://images.unsplash.com/photo-1584635379229-f0ae6bc2ae7d?auto=format&fit=crop&w=200&h=200&q=80',
+    gambar: 'https://files.catbox.moe/st0scm.png',
     rating: 4.9,
     rating_count: 245
   },
@@ -53,7 +53,7 @@ const menuData = [
     nama: 'Baso Ndog',
     deskripsi: 'Baso dengan telur ayam kampung segar.',
     harga: 15000,
-    gambar: 'https://images.unsplash.com/photo-1565557623262-b5c3c3a7b4b6?auto=format&fit=crop&w=200&h=200&q=80',
+    gambar: 'https://files.catbox.moe/nseg4c.png',
     rating: 4.95,
     rating_count: 312
   },
@@ -62,7 +62,7 @@ const menuData = [
     nama: 'Baso Iga',
     deskripsi: 'Iga sapi gurih dengan kuah kaldu premium.',
     harga: 15000,
-    gambar: 'https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?auto=format&fit=crop&w=200&h=200&q=80',
+    gambar: 'https://files.catbox.moe/43kddr.png',
     rating: 4.8,
     rating_count: 289
   },
@@ -71,7 +71,7 @@ const menuData = [
     nama: 'Baso Mercon',
     deskripsi: 'Pedas nendang, untuk pecinta level tinggi.',
     harga: 15000,
-    gambar: 'https://images.unsplash.com/photo-1584635379229-f0ae6bc2ae7d?auto=format&fit=crop&w=200&h=200&q=80',
+    gambar: 'https://files.catbox.moe/e9n9c7.png',
     rating: 4.85,
     rating_count: 198
   }
@@ -400,7 +400,9 @@ Desa/Kelurahan: ${desa}
 
 *📝 Catatan:* ${catatan}
 
-Terima kasih telah memesan baso kami! 🙏`;
+Terima kasih telah memesan baso kami! 🙏
+
+© BASO PARAPATAN ENAK & LEZAT`;
 
   const url = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
